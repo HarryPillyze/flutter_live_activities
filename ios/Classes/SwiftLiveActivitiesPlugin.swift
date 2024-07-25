@@ -148,15 +148,15 @@ public class SwiftLiveActivitiesPlugin: NSObject, FlutterPlugin, FlutterStreamHa
           }
           break
         case "getActivityState":
-          guard let args = call.arguments as? [String: Any] else {
-            result(FlutterError(code: "WRONG_ARGS", message: "Unknown data type in argument", details: nil))
-            return
-          }
-          if let activityId = args["activityId"] as? String {
-            getActivityState(activityId: activityId, result: result)
-          } else {
-            result(FlutterError(code: "WRONG_ARGS", message: "argument are not valid, check if 'activityId' is valid", details: nil))
-          }
+//           guard let args = call.arguments as? [String: Any] else {
+//             result(FlutterError(code: "WRONG_ARGS", message: "Unknown data type in argument", details: nil))
+//             return
+//           }
+//           if let activityId = args["activityId"] as? String {
+//             getActivityState(activityId: activityId, result: result)
+//           } else {
+//             result(FlutterError(code: "WRONG_ARGS", message: "argument are not valid, check if 'activityId' is valid", details: nil))
+//           }
           break
         case "getPushToken":
           guard let args = call.arguments  as? [String: Any] else {
